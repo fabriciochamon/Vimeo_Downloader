@@ -11,7 +11,7 @@
 	- `cd ./vimeo_downloader`
 	- `python main.py`
 	
-*Tested on Python Python 3.12 / Windows 11
+*Tested on Python 3.12 / Windows 11
 
 
 
