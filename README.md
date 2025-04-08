@@ -17,6 +17,8 @@
 
 ![Screenshot](images/screenshot.jpg)
 
+Check App usage [here](https://github.com/fabriciochamon/Vimeo_Downloader/tree/main/vimeo_downloader).
+
 
 
  
