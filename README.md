@@ -10,7 +10,8 @@
 5. Run:
 	- `cd ./vimeo_downloader`
 	- `python main.py`
-	
+
+*Make sure to have write permissions in this folder, some files will be created there!
 *Tested on Python 3.12 / Windows 11
 
 
