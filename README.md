@@ -3,7 +3,7 @@
  
  
 ## Installation:
-1. Create a python virtual env: `pip -m venv venv`
+1. Create a python virtual env: `python -m venv venv`
 2. Install requirements: `pip install -r requirements.txt`
 3. Install [Playwright](https://playwright.dev/python) Chromium browser: `playwright install chromium`
 4. Add your vimeo login credentials inside `credentials.json` file
