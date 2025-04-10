@@ -9,6 +9,11 @@ worker_num          = 6                 # max parallel browser windows allowed
 worker_timeout      = 5                 # borwser page timeouts
 download_chunk_size = 30 * (1024*1024)  # 30 Mb
 
+# cleans string for folder names on windows
+def clean_chars(filename):
+	keepcharacters = (' ','.','_','-')
+	return "".join(c for c in filename if c.isalnum() or c in keepcharacters).rstrip()
+
 # log to ui widget or Pipe connection, if provided
 def log(msg, conn=None):
 	if conn: conn.send(msg)
@@ -419,7 +424,7 @@ def download_videos(videos, downloads):
 		dpg.show_item(f'fetch_progress_{video["id"]}')
 		base_dir = './downloads'
 		for fmt in download_formats:
-			path = os.path.join(base_dir, video['title'])
+			path = os.path.join(base_dir, clean_chars(video['title'])).replace('\\', '/')
 			args = {
 				'video': video, 
 				'fmt': fmt, 
